@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html ng-app="makeModule">
+<head>
+    <script src="/Scripts/angular.min.js"></script>
+    <script src="/Scripts/Script.js"></script>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div ng-controller="makeController">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>
+                        Id
+                    </th>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Abrv
+                    </th>
+                </tr>
+            </thead>
+            <tr ng-repeat="s in make">
+                <td>
+                    {{s.Id}}
+                </td>
+                <td>
+                    {{s.Name}}
+                </td>
+                <td>
+                    {{s.Abrv}}
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
